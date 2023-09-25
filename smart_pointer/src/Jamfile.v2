@@ -1,0 +1,14 @@
+
+project
+    :   requirements
+        <include>$(ROOT)/tiny_Smart_Pointer
+    ;
+
+alias dependencies :
+    ;
+
+lib tinySmartPointer
+    :   [ glob-tree *.cpp : abandoned ]
+        dependencies
+    : <link>static
+    ;
